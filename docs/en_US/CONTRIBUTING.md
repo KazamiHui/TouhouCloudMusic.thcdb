@@ -6,15 +6,12 @@
     <a href="../ja/CONTRIBUTING.md">日本語</a>
 </h2>
 
-## Development
+## Contents
 
-### Initialize environment
+- [Development](#development)
+- [Commit Convention](#commit-convention)
 
-```bash
-just init
-```
-
-This installs git hooks.
+## <a id="development"></a>Development
 
 ### Run the development environment with Docker (recommended)
 
@@ -84,6 +81,6 @@ The priority in current code is:
 2. environment variables
 3. `config.dev.toml` (only for `debug` build and when the file exists)
 
-## Commit Convention
+### <a id="commit-convention"></a>Commit Convention
 
 Use imperative mood and start with a capital letter.
