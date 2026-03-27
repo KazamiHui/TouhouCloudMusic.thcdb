@@ -39,7 +39,7 @@
 		"marked-footnote": "^1.4.0",
 		"marked-shiki": "^1.2.1",
 		"msw": "^2.12.10",
-		"openapi-fetch": "^0.15.0",
+		"openapi-fetch": "^0.17.0",
 		"orval": "^8.4.2",
 		"shiki": "^3.21.0",
 		"solid-cropper": "workspace:*",
