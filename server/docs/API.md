@@ -21,6 +21,7 @@
 
 # user
 ## signup
+传入的groupid不可为admin.
 ## signin
 ## signout
 ## close
