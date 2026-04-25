@@ -1,36 +1,46 @@
 # 版本控制系统
 
 实现resource的版本控制.
-history的基本结构为：
+revision_node的基本结构为：
+- UID.
+记录当前版本的UID.
+- 历史UID.
+记录延续的版本的UID.
 - UUID.
-记录操作的resource对象的UUID.
-- 版本.
-类型为键值对，键名为`version`，键值类型为整数.
+记录操作涉及的resource对象的UUID.
 - 发起者.
-记录发起操作的user的UID.
+记录发起修改请求的账户的UID.
+- 审核员.
+记录通过修改请求的审核的账户的UID.
 - 操作类型.
-有`create`,`modify`,`merge`三种类型.
-- 操作.
-内容见后续.
+`create`,`modify`,`merge`,`delete`中其一.
+- 操作内容.
+内容见后续操作类型中的内容.
 
-每个history以提案为最小单元记录.
-
----
-**职能**：
-- 操作
-    - [create](#create)
-    - [delete](#delete)
-    - [modify](#modify)
-    - [merge](#merge)
+每个revision_node以提案为最小单元记录.
 
 ---
+**操作**
+- [revoke](#revoke)
+
+**操作类型**
+- [create](#create)
+- [delete](#delete)
+- [modify](#modify)
+- [merge](#merge)
+---
+
+## revoke
+提供一个UUID，按照对应的resource的`当前的revision_node的UID`的内容进行撤销，并将`当前的revision_node的UID`回退上一revision_node的UID.
 
 ## create
+记录创建的对象的UUID.
+
 ## delete
+记录被删除的resource的所有值.
+
 ## modify
+记录修改的键的值的变化范围及其变化内容.
+
 ## merge
-如果操作为`modify`和`delete`，则：
-- 在`modify`对象的新建history记录以下内容
-    - `操作类型`为`merge`.
-    - `操作`的内容为`{两个对象的差异数据}`.
-    - `版本`自增.
+记录被抛弃的键的值及其所属的resource对象的UUID，和增添的内容.
