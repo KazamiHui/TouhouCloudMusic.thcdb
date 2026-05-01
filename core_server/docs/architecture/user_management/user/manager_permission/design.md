@@ -94,7 +94,7 @@ graph TB
 
 ## auditor
 职能：
-- 访问`compliance audit`系统.
+- 访问`Tag_compliance_audit`系统和`socialize_review`系统.
 - 对社交直接相关的信息进行审核.
 - 可以对账户进行一个月以内的封禁，或某项社交功能时长三个月以内的中止（具体在compliance audit系统展开）.
 
