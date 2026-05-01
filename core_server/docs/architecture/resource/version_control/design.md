@@ -1,4 +1,4 @@
-# 版本控制系统
+# resource版本控制系统
 
 实现resource的版本控制.
 revision_node的基本结构为：
@@ -21,6 +21,7 @@ revision_node的基本结构为：
 
 ---
 **操作**
+- [获取revision_node内容](#获取revision_node内容)
 - [revoke](#revoke)
 
 **操作类型**
@@ -29,6 +30,9 @@ revision_node的基本结构为：
 - [modify](#modify)
 - [merge](#merge)
 ---
+
+## 获取revision_node内容
+给定一个UID，获取对应的revision_node除UID外的内容.
 
 ## revoke
 提供一个UUID，按照对应的resource的`当前的revision_node的UID`的内容进行撤销，并将`当前的revision_node的UID`回退上一revision_node的UID.
