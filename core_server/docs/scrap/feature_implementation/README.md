@@ -1,0 +1,54 @@
+# 功能实现文档
+此处为功能实现的文档，给出功能的约束、输入、输出.
+
+---
+**功能**
+- resource
+  - [search](./general/search.md)
+  - [create](./resource/create.md)
+  - [delete](./resource/delete.md)
+  - [modify](./resource/modify.md)
+  - [get_data](./resource/get_data.md)
+  - version_control
+    - [create_node](./version_control_and_history/create_node.md)
+    - [delete_node](./version_control_and_history/delete_node.md)
+    - [get_node_data](./version_control_and_history/get_node_data.md)
+    - [get_nodes](./version_control_and_history/get_nodes.md)
+  - examine_and_verify
+    - [create_proposal](./general/create_proposal.md)
+    - [get_proposal_or_report_data](./general/get_proposal_or_report_data.md)
+    - [get_proposal_or_report_list](./general/get_proposal_or_report_list.md)
+    - [approve](./resource/examine_and_verify/approve.md)
+    - [reject](./resource/examine_and_verify/reject.md)
+- tag
+  - [search](./general/search.md)
+  - [create](./tag/create.md)
+  - [delete](./tag/delete.md)
+  - [add_name](./tag/add_name.md)
+  - [delete_name](./tag/delete_name.md)
+  - history
+    - [create_node](./version_control_and_history/create_node.md)
+    - [delete_node](./version_control_and_history/delete_node.md)
+    - [get_node_data](./version_control_and_history/get_node_data.md)
+    - [get_nodes](./version_control_and_history/get_nodes.md)
+  - compliance_audit
+    - [create_proposal](./general/create_proposal.md)
+    - [get_proposal_or_report_data](./general/get_proposal_or_report_data.md)
+    - [get_proposal_or_report_list](./general/get_proposal_or_report_list.md)
+    - [approve](./tag/compliance_audit/approve.md)
+    - [reject](./tag/compliance_audit/reject.md)
+- socialize
+  - comment
+    - [create](./socialize/comment/create.md)
+    - [delete](./socialize/comment/delete.md)
+    - [get_data](./socialize/comment/get_data.md)
+    - [report](./socialize/comment/report.md)
+  - lawfulness_review
+    - [create_report](./socialize/lawfulness_review/create_report.md)
+    - [get_proposal_or_report_data](./general/get_proposal_or_report_data.md)
+    - [get_proposal_or_report_list](./general/get_proposal_or_report_list.md)
+    - [punish](./socialize/lawfulness_review/punish.md)
+    - [reject](./socialize/lawfulness_review/reject.md)
+- group
+- user
+- 
